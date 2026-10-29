@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>论文分析小助手</title>
+<meta name="description" content="粘贴论文全文，用你自己的大模型 API 生成一份锚定原文的分析报告。无需注册，关闭页面即清空。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23FFFBEB' stroke='%23111827' stroke-width='3'/%3E%3Ccircle cx='12' cy='13' r='4' fill='%23EC4899'/%3E%3Crect x='17' y='16' width='8' height='8' fill='%2322D3EE'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/css/memphis.css">
+<script src="/vendor/markdown-it.min.js"></script>
+<script src="/vendor/purify.min.js"></script>
+<script src="/vendor/mammoth.browser.min.js"></script>
+<script src="/vendor/pdf.min.js"></script>
+<script>
+  if (window.pdfjsLib) {
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc = '/vendor/pdf.worker.min.js'
+  }
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "vue": "/vendor/vue.esm-browser.prod.js"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app"></div>
+<noscript>本工具需要启用 JavaScript 才能使用。</noscript>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
