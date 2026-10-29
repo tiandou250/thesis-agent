@@ -61,7 +61,7 @@ export default {
         <div class="mp-field">
           <label class="mp-label">接口地址（Base URL）</label>
           <input class="mp-input" v-model.trim="form.base" placeholder="https://api.deepseek.com/v1" spellcheck="false" />
-          <div class="mp-hint">仅支持 OpenAI 兼容格式，即以 /chat/completions 为终点的接口</div>
+          <div class="mp-hint">仅支持 OpenAI 兼容格式（以 /chat/completions 结尾）。DeepSeek / Kimi / 硅基流动 已验证支持网页直连；智谱等没有跨域头的服务会被浏览器拦下。</div>
         </div>
 
         <div class="mp-field">
